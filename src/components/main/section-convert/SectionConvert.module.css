@@ -1,0 +1,41 @@
+.sectionConvert {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.convertFormBox {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+}
+
+
+.convertBox {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ECE9EC;
+    border-radius: 5px;
+    gap: 10px 0;
+}
+
+.input__rate {
+    padding: 10px 10px;
+    border: 2px solid #ECE9EC;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.convertImgBox {
+    margin: auto 0;
+    height: 100px;
+    width: 100px;
+}
+
+.convertImgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

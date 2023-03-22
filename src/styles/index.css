@@ -1,0 +1,26 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #FEF5EF;
+    color: #584B53;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #9D5C63;
+    color: #FFFF;
+}
+
+main {
+    height: calc(100vh - 100px);
+    background: #FFFF;
+}
+
+footer {
+    height: 200px;
+    background: #584B53;
+}

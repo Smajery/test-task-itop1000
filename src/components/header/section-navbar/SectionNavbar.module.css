@@ -1,0 +1,40 @@
+.sectionNavbar {
+    display: flex;
+    justify-content: center;
+}
+
+.sectionNavbar__content {
+    padding: 0 20px;
+    width: 1280px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sectionNavbar__title {
+    text-transform: uppercase;
+}
+
+.exchangeRateBox {
+    display: flex;
+    gap: 0 15px;
+    position: absolute;
+    right: 20px;
+}
+
+.exchangeRate {
+    padding: 6px 5px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exchangeRate p {
+    font-size: 20px;
+}
+
+.exchangeRate span {
+    font-weight: bold;
+}

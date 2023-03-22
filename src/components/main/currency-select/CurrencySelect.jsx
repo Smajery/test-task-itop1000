@@ -4,7 +4,7 @@ import classes from './CurrencySelect.module.css'
 
 const CurrencySelect = ({selectedCurrency, setSelectedCurrency}) => {
     const {currencyOptions} = useSelector(state => state.exchangeReducer)
-    const defaultValue = 'Виберіть валюту'
+    const defaultValue = 'Валюта'
     return (
         <select
             className={classes.select__currency}

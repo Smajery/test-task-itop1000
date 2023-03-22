@@ -73,10 +73,20 @@ const SectionConvert = () => {
                 <div className={classes.convertBox}>
                     <input
                         className={classes.input__rate}
-                        readOnly={selectedFromCurrency === '' && selectedToCurrency === ''}
+                        readOnly={
+                            selectedFromCurrency === ''
+                            && selectedToCurrency === ''
+                        }
                         type='text'
                         value={amountFrom}
-                        placeholder='Введіть число'
+                        placeholder={
+                            selectedFromCurrency === ''
+                            && selectedToCurrency === ''
+                                ?
+                                'Виберіть валюту'
+                                :
+                                'Введіть число'
+                        }
                         onChange={handleChangeFromAmount}
                         onClick={handleCurrentFrom}
                     />
@@ -91,10 +101,20 @@ const SectionConvert = () => {
                 <div className={classes.convertBox}>
                     <input
                         className={classes.input__rate}
-                        readOnly={selectedFromCurrency === '' && selectedToCurrency === ''}
+                        readOnly={
+                            selectedFromCurrency === ''
+                            && selectedToCurrency === ''
+                        }
                         type='text'
                         value={amountTo}
-                        placeholder='Введіть число'
+                        placeholder={
+                            selectedFromCurrency === ''
+                            && selectedToCurrency === ''
+                                ?
+                                'Виберіть валюту'
+                                :
+                                'Введіть число'
+                        }
                         onChange={handleChangeToAmount}
                         onClick={handleCurrentTo}
                     />

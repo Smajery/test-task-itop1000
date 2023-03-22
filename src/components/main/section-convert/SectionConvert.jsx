@@ -75,13 +75,13 @@ const SectionConvert = () => {
                         className={classes.input__rate}
                         readOnly={
                             selectedFromCurrency === ''
-                            && selectedToCurrency === ''
+                            || selectedToCurrency === ''
                         }
                         type='text'
                         value={amountFrom}
                         placeholder={
                             selectedFromCurrency === ''
-                            && selectedToCurrency === ''
+                        || selectedToCurrency === ''
                                 ?
                                 'Виберіть валюту'
                                 :
@@ -103,13 +103,13 @@ const SectionConvert = () => {
                         className={classes.input__rate}
                         readOnly={
                             selectedFromCurrency === ''
-                            && selectedToCurrency === ''
+                            || selectedToCurrency === ''
                         }
                         type='text'
                         value={amountTo}
                         placeholder={
                             selectedFromCurrency === ''
-                            && selectedToCurrency === ''
+                            || selectedToCurrency === ''
                                 ?
                                 'Виберіть валюту'
                                 :
